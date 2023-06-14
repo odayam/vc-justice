@@ -1,0 +1,15 @@
+<div class="video-wrapper" *ngIf="participant?.user as user">
+
+    <div class="job-title">
+        {{user.jobTitle}}
+    </div>
+    <video  #videoPlayer></video>
+    <div class="footer">
+        <div class="description">
+            <span class="footer-job-title">{{user.jobTitle}}</span>
+            <span>{{(participant?.isCurrent)? 'אני - ':''}}{{user.firstName + ' ' + user.lastName}}</span>
+        </div>
+        <i class="fa" [ngClass]="{'fa fa-microphone-slash': isMute, 'fa fa-microphone': !isMute, 'opacity': !canMute}" (click)="mute()"></i>
+    </div>
+</div>
+

@@ -1,0 +1,18 @@
+
+.login-wrapper{
+    border: 1px solid gray;
+    width: fit-content;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    .user-form{
+        
+        input{
+            display: block;
+            border: 1px solid gray;
+            border-radius: 0.2rem;
+            padding: 0.3rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

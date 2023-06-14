@@ -1,0 +1,11 @@
+<div class="conference-wrapper">
+
+    <vc-participant-list></vc-participant-list>
+    <div class="videos">
+        <vc-video [participant]="adminParticipant$ | async"></vc-video>
+        <div class="all-videos">
+
+            <vc-video *ngFor="let p of participants$ | async" [participant]="p"></vc-video>
+        </div>
+    </div>
+</div>

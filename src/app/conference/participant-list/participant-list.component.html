@@ -1,0 +1,10 @@
+<div class="users">
+    <div *ngFor="let p of participantsNotCurrent$ | async" class="user" >
+      <span>
+        <i class="fa fa-user"></i>
+        {{p.user.firstName + ' ' + p.user.lastName}}
+      </span>
+      <i class="fa fa-play" (click)="startUser(p)"></i>
+    </div>
+</div>
+ 

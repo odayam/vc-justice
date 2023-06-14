@@ -1,0 +1,10 @@
+.app-wrapper{
+    display: flex;
+    .container-wrapper{
+        width: 100%;
+    }
+    .current-user{
+        position: absolute;
+        color: white;
+    }
+}

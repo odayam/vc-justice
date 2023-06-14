@@ -1,0 +1,21 @@
+.users{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #938f89;
+    height: 100%;
+    .user{
+
+        background-color: gainsboro;
+        border-radius: .2rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        i{
+            margin: 2px;
+        }
+    }
+}

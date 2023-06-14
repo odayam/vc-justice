@@ -1,0 +1,13 @@
+
+<div class="app-wrapper">
+  <div *ngIf="user$ | async as user" class="current-user">
+    שלום {{user.firstName + ' ' + user. lastName}}
+  </div>
+  
+  <div class="container-wrapper">
+  <router-outlet></router-outlet>
+  </div>
+</div>
+
+
+

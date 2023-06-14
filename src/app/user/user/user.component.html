@@ -1,0 +1,53 @@
+<div class="login-wrapper">
+<form [formGroup]="userForm" (submit)="onSubmit()" class="user-form">
+
+    <div *ngIf="isRegister">
+        <div>
+            <label for="firstName">
+            שם פרטי
+            </label>
+            <input id="firstName" type="text" formControlName="firstName">
+        </div>
+        
+        <div>
+            <label for="lastName">
+            שם משפחה
+            </label>
+            <input id="lastName" type="text" formControlName="lastName">
+        </div>
+        <div>
+            <label for="jobTitle">
+            תפקיד
+            </label>
+            <input id="jobTitle" type="text" formControlName="jobTitle">
+        </div>
+
+        <div>
+            <label for="isAdmin">
+            מנהל
+            </label>
+            <input id="isAdmin" type="checkbox" formControlName="isAdmin">
+        </div>
+    </div>
+
+    <div>
+        <label for="username">
+        שם משתמש
+        </label>
+        <input id="username" type="text" formControlName="username">
+    </div>
+    
+    <div>
+        <label for="password">
+        סיסמא
+        </label>
+        <input id="password" type="text" formControlName="password">
+    </div>
+    <div class="buttons">    
+        
+        <button class="button" type="submit">{{isRegister ? 'שמור': 'הכנס'}}</button>
+        <a class="button" (click)="isRegister = !isRegister">{{isRegister ? 'חזור': 'להרשמה'}}</a>
+    </div>
+  
+  </form>
+</div>
